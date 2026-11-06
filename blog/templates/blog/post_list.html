@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primer Blog - Django Girls</title>
+    <!-- He añadido un poco de estilo CSS interno para que se vea "bonito" desde el primer momento, 
+         antes de llegar al capítulo de CSS del tutorial. -->
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fdfdfd;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff9400; /* Color naranja característico de Django Girls */
+            padding: 30px 40px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .post {
+            background-color: #ffffff;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #ff9400;
+        }
+        .post h2 a {
+            color: #2c3e50;
+            text-decoration: none;
+            font-size: 1.4em;
+        }
+        .post h2 a:hover {
+            color: #ff9400;
+        }
+        .date {
+            color: #888;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+            font-style: italic;
+        }
+        .post p {
+            line-height: 1.6;
+            font-size: 1.05em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><a href="/">Mi Blog de Django Girls 🚀</a></h1>
+    </header>
+
+    <main>
+        <!-- Primer Post -->
+        <article class="post">
+            <p class="date">Publicado: 06 de Noviembre de 2026, 10:30</p>
+            <h2><a href="">¡Hola Mundo! Mi primer post</a></h2>
+            <p>¡Bienvenidos a mi nuevo blog! Estoy construyendo esta página paso a paso con el tutorial de Django Girls. Aprender HTML es más fácil y divertido de lo que pensaba. Pronto conectaré todo esto con Python para que sea dinámico. 👩‍💻✨</p>
+        </article>
+
+        <!-- Segundo Post -->
+        <article class="post">
+            <p class="date">Publicado: 05 de Noviembre de 2026, 16:45</p>
+            <h2><a href="">¿Por qué aprender a programar?</a></h2>
+            <p>Aprender a programar te da el superpoder de crear cosas desde cero. Solo necesitas un ordenador, internet, un poco de paciencia y muchas ganas de explorar. Este es solo el comienzo de mi aventura en el desarrollo web. 🌍💡</p>
+        </article>
+    </main>
+
+</body>
+</html>
