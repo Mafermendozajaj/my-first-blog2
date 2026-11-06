@@ -54,7 +54,7 @@
             margin-bottom: 15px;
             font-style: italic;
         }
-        .post p {
+        .post time {
             line-height: 1.6;
             font-size: 1.05em;
         }
@@ -68,18 +68,13 @@
 
     <main>
         <!-- Primer Post -->
+         {% for post in posts %}
         <article class="post">
-            <p class="date">Publicado: 06 de Noviembre de 2026, 10:30</p>
-            <h2><a href="">¡Hola Mundo! Mi primer post</a></h2>
-            <p>¡Bienvenidos a mi nuevo blog! Estoy construyendo esta página paso a paso con el tutorial de Django Girls. Aprender HTML es más fácil y divertido de lo que pensaba. Pronto conectaré todo esto con Python para que sea dinámico. 👩‍💻✨</p>
+            <time class="date">published: {{ post.published_date }}</time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
         </article>
-
-        <!-- Segundo Post -->
-        <article class="post">
-            <p class="date">Publicado: 05 de Noviembre de 2026, 16:45</p>
-            <h2><a href="">¿Por qué aprender a programar?</a></h2>
-            <p>Aprender a programar te da el superpoder de crear cosas desde cero. Solo necesitas un ordenador, internet, un poco de paciencia y muchas ganas de explorar. Este es solo el comienzo de mi aventura en el desarrollo web. 🌍💡</p>
-        </article>
+        {% endfor %}
     </main>
 
 </body>
